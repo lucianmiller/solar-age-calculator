@@ -12,4 +12,10 @@ describe('AgeCalculator', () => {
     const mercuryAge = userAge.calculateMercuryAge();
     expect(mercuryAge).toEqual(0);
   });
+  
+  test('should return the age of the user if they were on Mercury', () => {
+    const userAge = new AgeCalculator(25);
+    const mercuryAge = userAge.calculateMercuryAge();
+    expect(mercuryAge).toEqual(104.17);
+  })
 });
