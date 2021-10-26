@@ -4,6 +4,7 @@ export default class AgeCalculator {
   }
 
   calculateMercuryAge() {
-    return 0;
+    let ageOnMercury = this.earthAge / 0.24;
+    return(ageOnMercury.toFixed(2));
   }
 }
