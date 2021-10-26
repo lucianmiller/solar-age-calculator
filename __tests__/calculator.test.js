@@ -15,4 +15,10 @@ describe('AgeCalculator', () => {
     expect(userAge.marsAge).toEqual(0);
     expect(userAge.jupiterAge).toEqual(0);
   });
+
+  test('should return zero for Mercury age if Earth age equals zero', () => {
+    const userAge = new AgeCalculator(0);
+    const mercuryAge = userAge.calculateMercuryAge();
+    expect(mercuryAge).toEqual(0);
+  });
 });
