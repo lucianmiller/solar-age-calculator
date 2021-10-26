@@ -9,6 +9,7 @@ export default class AgeCalculator {
   }
 
   calculateVenusAge(){
-    return("0.00")
+    let ageOnVenus = this.earthAge / 0.62;
+    return(ageOnVenus.toFixed(2));
   }
 }
