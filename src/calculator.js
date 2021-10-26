@@ -3,5 +3,7 @@ export default class AgeCalculator {
     this.earthAge = userAge;
   }
 
-
+  calculateMercuryAge() {
+    return 0;
+  }
 }
