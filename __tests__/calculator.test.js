@@ -17,5 +17,11 @@ describe('AgeCalculator', () => {
     const userAge = new AgeCalculator(25);
     const mercuryAge = userAge.calculateMercuryAge();
     expect(mercuryAge).toEqual("104.17");
-  })
+  });
+
+  test('should return zero for Venus age if Earth age equals zero', () => {
+    const userAge = new AgeCalculator(0);
+    const venusAge = userAge.calculateVenusAge();
+    expect(venusAge).toEqual("0.00");
+  });
 });
