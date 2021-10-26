@@ -28,6 +28,6 @@ describe('AgeCalculator', () => {
   test('should return the age of the user if they were on Venus', () => {
     const userAge = new AgeCalculator(25);
     const venusAge = userAge.calculateVenusAge();
-    expect(venusAge).toEqual("40.32")
+    expect(venusAge).toEqual("40.32");
   });
 });
