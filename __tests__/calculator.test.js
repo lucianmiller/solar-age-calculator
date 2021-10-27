@@ -30,4 +30,10 @@ describe('AgeCalculator', () => {
     const venusAge = userAge.calculateVenusAge();
     expect(venusAge).toEqual("40.32");
   });
+
+  test('should return zero for Mars age if Earth age equals zero', () => {
+    const userAge = new AgeCalculator(0);
+    const marsAge = userAge.calculateMarsAge();
+    expect(marsAge).toEqual("0.00");
+  });
 });
