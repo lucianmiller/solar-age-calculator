@@ -36,4 +36,10 @@ describe('AgeCalculator', () => {
     const marsAge = userAge.calculateMarsAge();
     expect(marsAge).toEqual("0.00");
   });
+
+  test('should return the age of the user if they were on Mars', () => {
+    const userAge = new AgeCalculator(25);
+    const marsAge = userAge.calculateMarsAge();
+    expect(marsAge).toEqual("13.30");
+  });
 });
