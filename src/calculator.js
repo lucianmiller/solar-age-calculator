@@ -14,6 +14,7 @@ export default class AgeCalculator {
   }
 
   calculateMarsAge(){
-    return("0.00");
+    let ageOnMars = this.earthAge / 1.88;
+    return(ageOnMars.toFixed(2));
   }
 }
