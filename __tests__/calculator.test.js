@@ -42,4 +42,10 @@ describe('AgeCalculator', () => {
     const marsAge = userAge.calculateMarsAge();
     expect(marsAge).toEqual("13.30");
   });
+
+  test('should return zero for Jupiter if Earth age equals zero', () => {
+    const userAge = new AgeCalculator(0);
+    const jupiterAge = userAge.calculateJupiterAge();
+    expect(jupiterAge).toEqual("0.00");
+  });
 });
