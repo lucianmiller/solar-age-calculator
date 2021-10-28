@@ -48,4 +48,10 @@ describe('AgeCalculator', () => {
     const jupiterAge = userAge.calculateJupiterAge();
     expect(jupiterAge).toEqual("0.00");
   });
+
+  test('should return the age of the user if they were on Jupiter', () => {
+    const userAge = new AgeCalculator(25);
+    const jupiterAge = userAge.calculateJupiterAge();
+    expect(jupiterAge).toEqual("2.12");
+  });
 });
