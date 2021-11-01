@@ -1,6 +1,7 @@
 export default class AgeCalculator {
   constructor(userAge) {
     this.earthAge = userAge;
+    this.earthLifeExpectancy = 80;
   }
 
   calculateMercuryAge() {
