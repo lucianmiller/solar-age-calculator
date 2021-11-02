@@ -23,4 +23,9 @@ export default class AgeCalculator {
     let ageOnJupiter = this.earthAge / 11.86;
     return(ageOnJupiter.toFixed(2));
   }
+
+  mercuryLifeExpectancy(){
+    let mercuryExpect = this.earthLifeExpectancy / 0.24;
+    return(parseInt(mercuryExpect.toFixed(2)));
+  }
 }
