@@ -59,5 +59,11 @@ describe('AgeCalculator', () => {
     const userAge = new AgeCalculator(25);
     expect(userAge.earthAge).toEqual(25);
     expect(userAge.earthLifeExpectancy).toEqual(80);
-  })
+  });
+  
+  test('should calculate life expectancy on Mercury', () => {
+    const userAge = new AgeCalculator(25);
+    const mercuryLife = userAge.mercuryLifeExpectancy();
+    expect(mercuryLife).toEqual(333.33);
+  });
 });
