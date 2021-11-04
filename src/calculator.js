@@ -27,12 +27,12 @@ export default class AgeCalculator {
   calculateMarsAge(){
     let ageOnMars = this.earthAge / 1.88;
     this.marsAge = ageOnMars;
-    this.venusLifeExpectancy = this.marsLifeExpectancy / 1.88;
+    this.marsLifeExpectancy = this.earthLifeExpectancy / 1.88;
   }
 
   calculateJupiterAge(){
     let ageOnJupiter = this.earthAge / 11.86;
     this.jupiterAge = ageOnJupiter;
-    this.jupiterLifeExpectancy = this.jupiterLifeExpectancy /11.86;
+    this.jupiterLifeExpectancy = this.earthLifeExpectancy /11.86;
   }
 }
