@@ -52,10 +52,11 @@ describe('AgeCalculator', () => {
     expect(userAge.jupiterAge.toFixed(2)).toEqual("0.00");
   });
 
-  test('should return the age of the user if they were on Jupiter', () => {
+  test('should return the age of the user and life expectancy on Jupiter', () => {
     const userAge = new AgeCalculator(25);
     userAge.calculateJupiterAge();
     expect(userAge.jupiterAge.toFixed(2)).toEqual("2.11");
+    expect(userAge.jupiterLifeExpectancy.toFixed(2)).toEqual("6.75");
   });
 
   test('should create an AgeCalculator object with a user age parameter and a life expectancy on Earth property', () => {
