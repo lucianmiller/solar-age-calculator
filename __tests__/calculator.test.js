@@ -21,14 +21,14 @@ describe('AgeCalculator', () => {
 
   test('should return zero for Venus age if Earth age equals zero', () => {
     const userAge = new AgeCalculator(0);
-    const venusAge = userAge.calculateVenusAge();
-    expect(venusAge).toEqual("0.00");
+    userAge.calculateVenusAge();
+    expect(userAge.venusAge.toFixed(2)).toEqual("0.00");
   });
 
   test('should return the age of the user if they were on Venus', () => {
     const userAge = new AgeCalculator(25);
-    const venusAge = userAge.calculateVenusAge();
-    expect(venusAge).toEqual("40.32");
+    userAge.calculateVenusAge();
+    expect(userAge.venusAge.toFixed(2)).toEqual("40.32");
   });
 
   test('should return zero for Mars age if Earth age equals zero', () => {

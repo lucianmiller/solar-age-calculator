@@ -22,7 +22,6 @@ export default class AgeCalculator {
     let ageOnVenus = this.earthAge / 0.62;
     this.venusAge = ageOnVenus;
     this.venusLifeExpectancy = this.earthLifeExpectancy / 0.62;
-    return(ageOnVenus.toFixed(2));
   }
 
   calculateMarsAge(){
