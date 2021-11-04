@@ -32,6 +32,7 @@ export default class AgeCalculator {
 
   calculateJupiterAge(){
     let ageOnJupiter = this.earthAge / 11.86;
-    return(ageOnJupiter.toFixed(2));
+    this.jupiterAge = ageOnJupiter;
+    this.jupiterLifeExpectancy = this.jupiterLifeExpectancy /11.86;
   }
 }
