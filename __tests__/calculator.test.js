@@ -39,10 +39,11 @@ describe('AgeCalculator', () => {
     expect(userAge.marsAge.toFixed(2)).toEqual("0.00");
   });
 
-  test('should return the age of the user if they were on Mars', () => {
+  test('should return the age of the user and life expectancy on Mars', () => {
     const userAge = new AgeCalculator(25);
     userAge.calculateMarsAge();
     expect(userAge.marsAge.toFixed(2)).toEqual("13.30");
+    expect(userAge.marsLifeExpectancy.toFixed(2)).toEqual("42.55");
   });
 
   test('should return zero for Jupiter if Earth age equals zero', () => {
