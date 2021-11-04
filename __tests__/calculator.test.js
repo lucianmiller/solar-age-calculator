@@ -13,10 +13,11 @@ describe('AgeCalculator', () => {
     expect(userAge.mercAge.toFixed(2)).toEqual("0.00");
   });
   
-  test('should return the age of the user if they were on Mercury', () => {
+  test('should return the age of the user and average life expectancy on Mercury', () => {
     const userAge = new AgeCalculator(25);
     userAge.calculateMercuryAge();
     expect(userAge.mercAge.toFixed(2)).toEqual("104.17");
+    expect(userAge.mercLifeExpectancy.toFixed(2)).toEqual("333.33");
   });
 
   test('should return zero for Venus age if Earth age equals zero', () => {
