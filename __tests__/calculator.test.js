@@ -108,4 +108,10 @@ describe('AgeCalculator', () => {
     userAge.calculateVenusAge();
     expect(userAge.venusLifeLeft.toFixed(2)).toEqual("-16.13");
   });
+
+  test('should calculate how long someone has lived past the life expectancy on Mars', () => {
+    const userAge = new AgeCalculator(90);
+    userAge.calculateMarsAge();
+    expect(userAge.marsLifeLeft.toFixed(2)).toEqual("-5.32")
+  });
 });
