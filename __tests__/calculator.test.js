@@ -64,4 +64,12 @@ describe('AgeCalculator', () => {
     expect(userAge.earthAge).toEqual(25);
     expect(userAge.earthLifeExpectancy).toEqual(80);
   });
+
+  test('should create an AgeCalculator object that saves how long someone has left for each planet', () => {
+    const userAge = new AgeCalculator(0);
+    expect(userAge.mercLifeLeft).toEqual(0);
+    expect(userAge.venusLifeLeft).toEqual(0);
+    expect(userAge.marsLifeLeft).toEqual(0);
+    expect(userAge.jupiterLifeLeft).toEqual(0);
+  });
 });
