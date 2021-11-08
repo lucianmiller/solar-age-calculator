@@ -96,4 +96,10 @@ describe('AgeCalculator', () => {
     userAge.calculateJupiterAge();
     expect(userAge.jupiterLifeLeft.toFixed(2)).toEqual("4.64");
   });
+
+  test('should calculate how long someone has lived past the life expectancy on Mercury', () => {
+    const userAge = new AgeCalculator(90);
+    userAge.calculateMercuryAge();
+    expect(userAge.mercLifeLeft.toFixed(2)).toEqual("-41.67");
+  });
 });
