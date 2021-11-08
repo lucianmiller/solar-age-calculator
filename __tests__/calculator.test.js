@@ -78,4 +78,10 @@ describe('AgeCalculator', () => {
     userAge.calculateMercuryAge();
     expect(userAge.mercLifeLeft.toFixed(2)).toEqual("229.17");
   });
+
+  test('should calculate how long someone has left on Venus', () => {
+    const userAge = new AgeCalculator(25);
+    userAge.calculateVenusAge();
+    expect(userAge.venusLifeLeft.toFixed(2)).toEqual("88.71");
+  });
 });
