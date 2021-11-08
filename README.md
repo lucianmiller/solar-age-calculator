@@ -1,31 +1,48 @@
-# _{Application Name}_
+# Solar Age Calculator
 
-#### _{Brief description of application}, {Date of current version}_
+#### Independent Project for Epicodus, 11/8/2021
 
 #### By Lucian Miller
 
 ## Description
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+Ever wonder what age you would be on other planets in our solar system? This application will tell you your ages on Mercury, Venus, Mars and Jupiter! It will also inform you how long you have left to live on those planets when compared to the average life expectancy, and if you've lived past the life expectancy, how many years on each planet you've lived past it! 
+This program was created to test the knowledge I have gathered in this section of class.
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+* On github, select the green Code button to the top right
+* Copy the link
+* Type "clone " in your terminal and past the link
+* Press enter
+* Type "npm install" in your terminal
+* Open project with "code ." 
 
 # Specs
 
 |Description|Input|Output
 |:--:|:--:|:--:|
+|Will calculate age on Mercury|Earth Age: 25|Mercury Age: 104.17|
+|Will calculate age on Venus|Earth Age: 25|Venus Age: 40.32|
+|Will calculate age on Mars|Earth Age: 25|Mars Age: 13.30|
+|Will calculate age on Jupiter|Earth Age:25|Jupiter Age: 2.11|
+|Will calculate life expectancy on Mercury|Earth Life Expectancy: 80|Mercury Life Expectancy: 333.33|
+|Will calculate life expectancy on Venus|Earth Life Expectancy: 80|Venus Life Expectancy: 129.03|
+|Will calculate life expectancy on Mars|Earth Life Expectancy: 80|Mars Life Expectancy: 42.55|
+|Will calculate life expectancy on Jupiter|Earth Life Expectancy: 80|Jupiter Life Expectancy: 6.75|
+|Will calculate how long someone has left on Mercury|Earth Age: 25| Mercury Life Left: 229.17|
+|Will calculate how long someone has left on Venus|Earth Age: 25|Venus Life Left: 88.71|
+|Will calculate how long someone has left on Mars|Earth Age: 25|Mars Life Left: 29.26|
+|Will calculate how long someone has left on Jupiter|Earth Age: 25|Jupiter Life Left: 4.64|
+|Will calculate how long someone has lived past the life expectancy on Mercury|Earth Age: 90|Past Mercury Life Expectancy: 41.67|
+|Will calculate how long someone has lived past the life expectancy on Venus|Earth Age: 90|Past Venus Life Expectancy: 16.13|
+|Will calculate how long someone has lived past the life expectancy on Mars|Earth Age: 90|Past Mars Life Expectancy: 5.32|
+|Will calculate how long someone has lived past the life expectancy on Jupiter|Earth Age: 90|Past Jupiter Life Expectancy: 0.84|
+
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+No known bugs as of this version
 
 ## Support and contact details
 
@@ -33,10 +50,13 @@ lucian.miller185@gmail.com
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+* git
+* VS code
+* Javascript
+* webpack
 
 ### License
 
-*This software is licensed under the (blank) license*
+*This software is licensed under the MIT license*
 
 Copyright (c) 2021 Lucian Miller
