@@ -89,5 +89,11 @@ describe('AgeCalculator', () => {
     const userAge = new AgeCalculator(25);
     userAge.calculateMarsAge();
     expect(userAge.marsLifeLeft.toFixed(2)).toEqual("29.26");
-  })
+  });
+
+  test('should calculate how long someone has left on Jupiter', () => {
+    const userAge = new AgeCalculator(25);
+    userAge.calculateJupiterAge();
+    expect(userAge.jupiterLifeLeft.toFixed(2)).toEqual("4.64");
+  });
 });
