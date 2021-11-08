@@ -34,6 +34,7 @@ export default class AgeCalculator {
     let ageOnMars = this.earthAge / 1.88;
     this.marsAge = ageOnMars;
     this.marsLifeExpectancy = this.earthLifeExpectancy / 1.88;
+    this.marsLifeLeft = this.marsLifeExpectancy - this.marsAge;
   }
 
   calculateJupiterAge(){
