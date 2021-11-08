@@ -4,12 +4,16 @@ export default class AgeCalculator {
     this.earthLifeExpectancy = 80;
     this.mercAge = 0;
     this.mercLifeExpectancy = 0;
+    this.mercLifeLeft = 0;
     this.venusAge = 0;
     this.venusLifeExpectancy = 0;
+    this.venusLifeLeft = 0;
     this.marsAge = 0;
     this.marsLifeExpectancy = 0;
+    this.marsLifeLeft = 0;
     this.jupiterAge = 0;
     this.jupiterLifeExpectancy = 0;
+    this.jupiterLifeLeft = 0;
   }
 
   calculateMercuryAge() {
