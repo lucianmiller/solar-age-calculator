@@ -20,6 +20,7 @@ export default class AgeCalculator {
     let ageOnMercury = this.earthAge / 0.24;
     this.mercAge = ageOnMercury;
     this.mercLifeExpectancy = this.earthLifeExpectancy / 0.24;
+    this.mercLifeLeft = this.mercLifeExpectancy - this.mercAge;
   }
 
   calculateVenusAge(){
