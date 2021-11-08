@@ -72,4 +72,10 @@ describe('AgeCalculator', () => {
     expect(userAge.marsLifeLeft).toEqual(0);
     expect(userAge.jupiterLifeLeft).toEqual(0);
   });
+
+  test('should calculate how long someone has left on Mercury', () => {
+    const userAge = new AgeCalculator(25);
+    userAge.calculateMercuryAge();
+    expect(userAge.mercLifeLeft.toFixed(2)).toEqual("229.17");
+  });
 });
