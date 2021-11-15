@@ -13,10 +13,11 @@ This program was created to test the knowledge I have gathered in this section o
 
 * On github, select the green Code button to the top right
 * Copy the link
-* Type "clone " in your terminal and past the link
+* Type `git clone` in your terminal and paste the link
 * Press enter
-* Type "npm install" in your terminal
-* Open project with "code ." 
+* Type `npm install` in your terminal
+* Type `npm run build` in your terminal
+* Type `npm run test` to run all the tests
 
 # Specs
 
